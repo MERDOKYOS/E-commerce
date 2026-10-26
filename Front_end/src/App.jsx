@@ -1,9 +1,32 @@
 import React from 'react';
+import {Routes, Route} from 'react-router-dom';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Collection from './pages/Collection';
+import About from './pages/About';
+import Product from './pages/Product';
+import Cart from './pages/Cart';
+import Login from './pages/Login';
+import PlaceOrder from './pages/PlaceOrder';
+import Order from './pages/Order';
+import NavBar from './components/NavBar';
+
 
 const App = () =>{
   return(
-    <div>
-      Merde
+    <div className="px-4 sm:px-[5vm] md:px-[7vm] lg:px-[9vm]">
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={ <Home/>}/>
+        <Route path="/collection" element={ <Collection/>}/>
+        <Route path="/about" element={ <About/>}/>
+        <Route path="/contact" element={ <Contact/>}/>
+        <Route path="/product:productId" element={ <Product/>}/>
+        <Route path="/cart" element={ <Cart/>}/>
+        <Route path="/login" element={ <Login/>}/>
+        <Route path="/placeOrder" element={ <PlaceOrder/>}/>
+        <Route path="/order" element={ <Order/>}/>
+      </Routes>
     </div>
   )
 }
