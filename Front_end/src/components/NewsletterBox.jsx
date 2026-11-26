@@ -7,8 +7,10 @@ function NewsletterBox() {
   };
   return (
     <div className="text-center">
-      <p>Subscribe and get 10% discount</p>
-      <p className="text-gray-600 mt-3">
+      <p className="text-2xl font-medium text-gray-800">
+        Subscribe and get 10% discount
+      </p>
+      <p className="text-gray-400 mt-3">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Necessitatibus, nemo!
       </p>
